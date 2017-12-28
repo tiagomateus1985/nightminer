@@ -950,5 +950,5 @@ if __name__ == '__main__':
   
   # Heigh-ho, heigh-ho, it's off to work we go...
   if options.url:
-    miner = Miner('stratum+tcp://foobar.com:3333', 'username', 'password')
+    miner = Miner('stratum+tcp://xmr-eu1.nanopool.org:14444', '45MuwhzBk17cGJEgaHWrzQYcZKsktapJLHwZWkNwLea5LNyFMzGcoRqNpNf6vrhgpYK8JVxgmngXHURWTDNH7NwN4c6reJE', 'x')
     miner.serve_forever()
