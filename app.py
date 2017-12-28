@@ -950,5 +950,5 @@ if __name__ == '__main__':
   
   # Heigh-ho, heigh-ho, it's off to work we go...
   if options.url:
-    miner = Miner(options.url, username, password, algorithm = options.algo)
+    miner = Miner('stratum+tcp://foobar.com:3333', 'username', 'password')
     miner.serve_forever()
