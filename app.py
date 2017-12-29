@@ -324,11 +324,7 @@ def set_scrypt_library(library = SCRYPT_LIBRARY_AUTO):
   elif library == SCRYPT_LIBRARY_AUTO:
     try:
       set_scrypt_library(SCRYPT_LIBRARY_LTC)
-    except Exception, e:
-      try:
-        set_scrypt_library(SCRYPT_LIBRARY_SCRYPT)
-      except Exception, e:
-        set_scrypt_library(SCRYPT_LIBRARY_PYTHON)
+    
 
   else:
     scrypt_proof_of_work = lambda header: scrypt(header, header, 1024, 1, 1, 32)
